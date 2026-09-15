@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0d0d0d;
+    color: #f2f2f2;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.museum {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.museum__title {
+    text-align: center;
+    font-size: 56px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    margin-bottom: 10px;
+
+    text-shadow:
+        0 0 10px rgba(255, 0, 0, 0.5),
+        0 0 25px rgba(255, 0, 0, 0.3);
+}
+
+.museum__welcome {
+    text-align: center;
+    color: #ff4d4d;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   LINES
+========================= */
+
+.museum__line {
+    border: none;
+    height: 1px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #ff3030,
+        transparent
+    );
+
+    margin: 55px 0;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.museum__section {
+    background: #161616;
+
+    border: 1px solid #292929;
+    border-radius: 18px;
+
+    padding: 35px;
+
+    margin-bottom: 35px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.45);
+
+    transition: 0.3s ease;
+}
+
+.museum__section:hover {
+    transform: translateY(-5px);
+
+    border-color: #ff3333;
+
+    box-shadow:
+        0 15px 40px rgba(255, 0, 0, 0.12);
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+.museum__heading {
+    font-size: 30px;
+    color: #ffffff;
+
+    margin-bottom: 20px;
+
+    border-left: 5px solid #ff3030;
+
+    padding-left: 15px;
+}
+
+.museum__subtitle {
+    color: #ff4545;
+    font-size: 22px;
+
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.museum__text {
+    color: #cfcfcf;
+    font-size: 17px;
+
+    margin: 10px 0;
+}
+
+.museum__text b {
+    color: #ffffff;
+}
+
+
+/* =========================
+   IMAGES
+========================= */
+
+.museum__image {
+    display: block;
+
+    width: 100%;
+    max-width: 700px;
+
+    max-height: 430px;
+
+    object-fit: cover;
+
+    margin: 25px auto;
+
+    border-radius: 14px;
+
+    border: 2px solid #292929;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.6);
+
+    transition: 0.4s ease;
+}
+
+.museum__image:hover {
+    transform: scale(1.02);
+
+    border-color: #ff3333;
+
+    box-shadow:
+        0 15px 45px rgba(255, 0, 0, 0.25);
+}
+
+
+/* =========================
+   VIDEO
+========================= */
+
+.museum__video {
+    text-align: center;
+}
+
+.museum__video .museum__heading {
+    text-align: left;
+}
+
+.museum__video-frame {
+    display: block;
+
+    width: 100%;
+    max-width: 850px;
+
+    height: 480px;
+
+    margin: 30px auto 0;
+
+    border-radius: 15px;
+
+    border: 2px solid #292929;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.7);
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.museum__timeline {
+    background: #101010;
+
+    border-left: 4px solid #ff3030;
+
+    padding: 15px 20px;
+
+    margin: 12px 0;
+
+    border-radius: 0 8px 8px 0;
+
+    color: #e4e4e4;
+
+    transition: 0.3s ease;
+}
+
+.museum__timeline:hover {
+    background: #1d1d1d;
+
+    padding-left: 28px;
+
+    color: #ff4d4d;
+}
+
+
+/* =========================
+   LIST
+========================= */
+
+.museum__list {
+    list-style: none;
+
+    margin-top: 20px;
+}
+
+.museum__item {
+    background: #101010;
+
+    margin: 12px 0;
+
+    padding: 14px 18px;
+
+    border-radius: 8px;
+
+    border-left: 4px solid #ff3030;
+
+    color: #d5d5d5;
+
+    transition: 0.3s ease;
+}
+
+.museum__item:hover {
+    background: #1e1e1e;
+
+    transform: translateX(7px);
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   FUTURE SECTION
+========================= */
+
+.museum__section--future {
+    background:
+        linear-gradient(
+            135deg,
+            #171717,
+            #101010
+        );
+
+    border: 1px solid #ff3030;
+}
+
+.museum__section--future .museum__heading {
+    color: #ff4d4d;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.museum__footer {
+    text-align: center;
+
+    color: #777;
+
+    font-size: 15px;
+
+    padding: 30px 0 50px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   SELECTION
+========================= */
+
+::selection {
+    background: #ff3030;
+    color: white;
+}
+
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff3030;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff5555;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .museum {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .museum__title {
+        font-size: 38px;
+        letter-spacing: 2px;
+    }
+
+    .museum__welcome {
+        font-size: 16px;
+    }
+
+    .museum__section {
+        padding: 22px;
+        border-radius: 14px;
+    }
+
+    .museum__heading {
+        font-size: 23px;
+    }
+
+    .museum__subtitle {
+        font-size: 19px;
+    }
+
+    .museum__text {
+        font-size: 15px;
+    }
+
+    .museum__image {
+        max-height: 300px;
+    }
+
+    .museum__video-frame {
+        height: 250px;
+    }
+
+    .museum__line {
+        margin: 35px 0;
+    }
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 480px) {
+
+    .museum__title {
+        font-size: 30px;
+    }
+
+    .museum__section {
+        padding: 18px;
+    }
+
+    .museum__heading {
+        font-size: 21px;
+    }
+
+    .museum__video-frame {
+        height: 210px;
+    }
+}
